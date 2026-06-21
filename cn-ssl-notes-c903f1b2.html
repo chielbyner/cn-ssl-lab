@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>看球直播 · 稳定赛事导航</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fafaf9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 2rem;
+            flex: 1;
+        }
+
+        /* hero */
+        .hero {
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #e5e5e0;
+            padding-bottom: 2rem;
+        }
+
+        .hero__badge {
+            display: inline-block;
+            font-size: .7rem;
+            letter-spacing: .3em;
+            text-transform: uppercase;
+            color: #8a8a86;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .hero__title {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: -.02em;
+            line-height: 1.2;
+            margin-bottom: .4rem;
+        }
+
+        .hero__sub {
+            font-size: 1rem;
+            color: #5e5e5a;
+            max-width: 32em;
+            margin-top: .6rem;
+        }
+
+        /* 正文区域 */
+        .section {
+            margin-bottom: 2.4rem;
+        }
+
+        .section__label {
+            font-size: .8rem;
+            font-weight: 600;
+            letter-spacing: .06em;
+            color: #a0a09a;
+            margin-bottom: .5rem;
+            display: block;
+        }
+
+        .section h2 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin-bottom: .8rem;
+            letter-spacing: -.01em;
+            color: #1d1d1f;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            color: #2c2c2a;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section a {
+            color: #3255c4;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(50, 85, 196, .2);
+            transition: border-color .15s;
+        }
+
+        .section a:hover {
+            border-bottom-color: #3255c4;
+        }
+
+        /* 特点卡片（简洁列表） */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem 1.8rem;
+            margin: 1.8rem 0 1.2rem;
+        }
+
+        .feature-item {
+            border-left: 2px solid #d4d4cf;
+            padding-left: .9rem;
+        }
+
+        .feature-item strong {
+            display: block;
+            font-size: .95rem;
+            font-weight: 600;
+            margin-bottom: .2rem;
+        }
+
+        .feature-item span {
+            font-size: .88rem;
+            color: #5e5e5a;
+        }
+
+        /* 引用/提示块 */
+        .footnote {
+            margin-top: 2.8rem;
+            padding: 1.6rem 1.8rem;
+            background: #f0efec;
+            border-radius: 12px;
+            font-size: .92rem;
+            color: #3a3a37;
+        }
+
+        .footnote a {
+            color: #3255c4;
+            font-weight: 500;
+            border-bottom: 1px solid rgba(50, 85, 196, .25);
+            text-decoration: none;
+        }
+
+        .footnote a:hover {
+            border-bottom-color: #3255c4;
+        }
+
+        /* 页尾 */
+        .page-footer {
+            margin-top: 3.2rem;
+            padding: 1.2rem 0 0;
+            border-top: 1px solid #e5e5e0;
+            font-size: .78rem;
+            color: #8e8e89;
+            text-align: left;
+        }
+
+        /* 响应式 */
+        @media (max-width: 540px) {
+            .page {
+                padding: 2rem 1.2rem 1.5rem;
+            }
+            .hero__title {
+                font-size: 1.7rem;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .footnote {
+                padding: 1.2rem 1.2rem;
+            }
+        }
+
+        @media (min-width: 900px) {
+            .page {
+                padding-top: 4.5rem;
+            }
+            .hero__title {
+                font-size: 2.6rem;
+            }
+        }
+
+        /* 列表重置 */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- hero -->
+        <header class="hero">
+            <span class="hero__badge">杂志专题 · 赛事导航</span>
+            <h1 class="hero__title">稳定入口，直达赛场</h1>
+            <p class="hero__sub">围绕赛事观看的基础需求，梳理一条清晰、轻量的索引路径。</p>
+        </header>
+
+        <!-- 第一部分：背景与定位 -->
+        <section class="section">
+            <span class="section__label">01 · 背景</span>
+            <h2>为什么需要一个稳定索引</h2>
+            <p>体育赛事直播的入口往往分散在各类平台与域名之间，用户每次寻找都需要重新确认路径是否有效。对于习惯直接通过浏览器访问的观众而言，一个长期可用的固定地址，能减少大量中间步骤。在众多以“看球”为关键词的服务中，保持入口的简洁与可靠，本身就是对时间成本的尊重。</p>
+            <p><a href="https://cn-ssl-kanqiu.com">看球直播</a>正是基于这一想法出现的导航节点——它不试图替代客户端或聚合所有内容，而是作为一条直达赛场的稳定路径，让用户快速抵达所需页面，无需反复搜索或收藏多个备选。</p>
+        </section>
+
+        <!-- 第二部分：页面能力概述 -->
+        <section class="section">
+            <span class="section__label">02 · 特点</span>
+            <h2>轻量指向，聚焦核心</h2>
+            <p>作为入口页面，它承担的角色并非重内容展示，而是提供清晰的功能分区与跳转逻辑。从实际使用场景来看，观众通常带着明确目标到来：查看当前热门赛事、寻找特定联赛的直播流，或判断信号是否可用。因此页面设计围绕三个基本维度展开。</p>
+
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <strong>赛事目录</strong>
+                    <span>按联赛与时间排列，减少信息过载</span>
+                </div>
+                <div class="feature-item">
+                    <strong>信号分类</strong>
+                    <span>区分主备线路，方便快速切换</span>
+                </div>
+                <div class="feature-item">
+                    <strong>状态提示</strong>
+                    <span>显示直播中/即将开始/已结束</span>
+                </div>
+                <div class="feature-item">
+                    <strong>直达链接</strong>
+                    <span>每个赛事对应独立入口，不绕路</span>
+                </div>
+            </div>
+            <p>上述功能均围绕“降低访问摩擦”这一原则构建。无论用户是使用桌面浏览器还是移动设备，页面都应保持一致的响应式体验，避免因视口变化导致操作困难。</p>
+        </section>
+
+        <!-- 第三段：使用场景与建议 -->
+        <section class="section">
+            <span class="section__label">03 · 场景</span>
+            <h2>从收藏到日常使用的习惯</h2>
+            <p>对于每周观看多场联赛的用户，将 <a href="https://cn-ssl-kanqiu.com">看球直播</a> 加入浏览器书签或设为常用标签页，可以省去每轮比赛前搜索入口的时间。页面本身不会强制跳转或嵌入额外广告，入口的纯净度有助于保持注意力集中在赛事本身。</p>
+            <p>同时，该地址也适合作为远程设备（如智能电视浏览器、投屏辅助工具）的快捷访问对象——输入域名即进入赛事列表，避免在遥控器或触摸板上进行繁琐的文本输入。对于临时需要查看比分或直播流的朋友，分享这个链接也足够直观。</p>
+            <p>值得一提的是，页面也会定期更新有关热门赛事的简要说明与信号状态摘要，方便在未进入具体直播页前就了解大致情况。</p>
+        </section>
+
+        <!-- 页尾提示区 -->
+        <div class="footnote">
+            <strong>📋 关于访问</strong> · 如果您是第一次接触该导航，建议先浏览首页的赛事列表，熟悉分类逻辑。所有外部链接均指向独立的直播页面，请根据自身网络环境选择线路。如遇到加载问题，可尝试刷新或切换分类标签。<br><br>
+            <span>🔗 直接使用：<a href="https://cn-ssl-kanqiu.com">看球直播</a> — 固定入口，不做跳转中介。</span>
+        </div>
+
+        <footer class="page-footer">
+            <span>杂志专题式介绍 · 稳定赛事导航 · 内容仅供参考</span>
+        </footer>
+    </div>
+
+    <!-- 注：ac01f8088e2407c8 仅用于内容变化参考，未在页面中展示 -->
+</body>
+</html>
